@@ -1,4 +1,29 @@
 /*=========================xxl device start=========================*/
+@media(min-width:1400px) {
+    #service .service_prev_arrow {
+        left: 47.5%;
+    }
+
+    #service .service_next_arrow {
+        right: 47.5%;
+    }
+
+    #testimonial .testimonial_prev_arrow {
+        left: 47.5%;
+    }
+
+    #testimonial .testimonial_next_arrow {
+        right: 47..5%;
+    }
+
+    #blog .blog_item_img img {
+        width: 100%;
+    }
+
+    #blog .blog_text {
+        padding: 54px 40px;
+    }
+}
 
 /*=========================xxl device end=========================*/
 
@@ -89,6 +114,34 @@
 
 /*=========================md device start=========================*/
 @media(min-width:768px) and (max-width:991px) {
+    .main_nav .menu ul {
+        background: gray;
+        text-align: center;
+    }
+
+    .main_nav .menu ul li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main_nav .menu ul li a {
+        padding-top: 10px !important;
+    }
+
+    #banner::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.5);
+        content: '';
+    }
+
+    #banner .banner_text {
+        left: 40%;
+        z-index: 1;
+    }
 
     #about {
         padding-top: 70px;
@@ -110,6 +163,28 @@
     #portfolio {
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+
+    #portfolio .offset-1 {
+        margin-left: 0;
+    }
+
+    #portfolio .portfolio_item_img_overlay_text {
+        margin-top: 92%;
+    }
+
+    #portfolio .portfolio_item_img_overlay_icon i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    #portfolio .portfolio_head h2 {
+        margin-bottom: 35px;
+    }
+
+    #portfolio .portfolio_category ul li {
+        line-height: 45px;
     }
 
     #service .service_item {
@@ -146,8 +221,44 @@
         padding-bottom: 70px;
     }
 
+    #pricing .pricing_item_head {
+        height: 50px;
+    }
+
+    #pricing .pricing_item_head h3 {
+        line-height: 50px;
+    }
+
+    #pricing .pricing_item_price {
+        padding-bottom: 10px;
+    }
+
+    #pricing .pricing_item_price h2 {
+        font-size: 44px;
+    }
+
+    #pricing .pricing_item_price span {
+        font-size: 16px;
+    }
+
+    #pricing .pricing_item_text ul {
+        margin-top: 14px;
+    }
+
+    #pricing .pricing_item_text ul li {
+        line-height: 30px;
+    }
+
+    #pricing .pricing_item_btn a {
+        padding: 8px 12px;
+    }
+
     #blog .blog_item_img img {
         width: 100%;
+    }
+
+    #blog .blog_text {
+        padding: 20px;
     }
 
     #footer .footer_main {
@@ -166,11 +277,7 @@
 @media(min-width:576px) and (max-width:767px) {
 
     .navbar-brand img {
-        width: 120px !important;
-    }
-
-    .navbar-toggler:focus {
-        box-shadow: none;
+        width: 120px;
     }
 
     .main_nav .menu ul {
@@ -187,18 +294,28 @@
         padding-top: 10px !important;
     }
 
+    #banner .banner_img {
+        display: none;
+    }
+
+    #banner .banner_text {
+        position: static;
+        top: 0;
+        margin-top: 220px;
+    }
+
     #banner .banner_text h3 {
-        font-size: 19px;
+        font-size: 28px;
     }
 
     #banner .banner_text h1 {
-        font-size: 72px;
-        line-height: 72px;
+        font-size: 100px;
+        line-height: 100px;
     }
 
     #banner .banner_text h2 {
-        font-size: 58px;
-        line-height: 58px;
+        font-size: 85px;
+        line-height: 85px;
 
     }
 
@@ -282,6 +399,10 @@
     #portfolio {
         padding-top: 50px;
         padding-bottom: 45px;
+    }
+
+    #portfolio .offset-1 {
+        margin-left: 0;
     }
 
     .portfolio_item {
@@ -569,13 +690,13 @@
     .scroll_to_top {
         right: 12px;
         bottom: 12px;
-        width: 32px;
-        height: 32px;
-        line-height: 32px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
 
     .scroll_to_top i {
-        font-size: 15px;
+        font-size: 22px;
     }
 }
 
@@ -586,15 +707,11 @@
 @media(max-width:575px) {
 
     .navbar-brand img {
-        width: 120px !important;
-    }
-
-    .navbar-toggler:focus {
-        box-shadow: none;
+        width: 120px;
     }
 
     .main_nav .menu ul {
-        background: gray;
+        background: #c3c3c3;
         text-align: center;
     }
 
@@ -607,19 +724,42 @@
         padding-top: 10px !important;
     }
 
+    #banner {
+        height: 530px;
+    }
+
+    #banner .banner_img {
+        display: none;
+    }
+
+    #banner .banner_text {
+        top: 230px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center !important;
+    }
+
     #banner .banner_text h3 {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #banner .banner_text h1 {
-        font-size: 72px;
-        line-height: 72px;
+        font-size: 60px;
+        line-height: 65px;
     }
 
     #banner .banner_text h2 {
-        font-size: 58px;
-        line-height: 58px;
+        font-size: 50px;
+        line-height: 50px;
 
+    }
+
+    #banner .banner_btn a {
+        padding: 10px 12px;
+    }
+
+    #banner .banner_btn a:first-child {
+        margin-right: 10px;
     }
 
     #about {
@@ -995,12 +1135,16 @@
     #footer .message_me .message button {
         width: 55px;
         height: 55px;
-        bottom: 0px;
+        bottom: 2px;
     }
 
     #footer .message_me .message button i {
         bottom: -20%;
         right: 0%;
+    }
+
+    #footer .footer_copyright .footer_copyright_text p {
+        padding: 0 30px;
     }
 
     .scroll_to_top {
@@ -1012,7 +1156,7 @@
     }
 
     .scroll_to_top i {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 

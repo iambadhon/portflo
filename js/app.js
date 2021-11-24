@@ -1,17 +1,11 @@
 $(function () {
 
-    //============================preloader section start============================//
-    $(window).on("load", function () {
-        $(".preloader").delay(500).fadeOut(800);
-    });
-    //============================preloader section end============================//
-
     //============================scroll to top section start============================//
     $(".scroll_to_top").click(function () {
         $("html, body").animate({
                 scrollTop: 0,
             },
-            2000);
+            00);
     });
 
     $(window).scroll(function () {
@@ -24,11 +18,11 @@ $(function () {
         }
 
 
-        // if (scrolling > 150) {
-        //     $(".main_manu").addClass("nav_sticky");
-        // } else {
-        //     $(".main_manu").removeClass("nav_sticky")
-        // }
+        if (scrolling > 150) {
+            $(".main_nav").addClass("nav_sticky");
+        } else {
+            $(".main_nav").removeClass("nav_sticky")
+        }
     });
     //============================scroll to top section end============================//
 
@@ -91,5 +85,33 @@ $(function () {
         }, ]
     });
     //======================slick slider end======================// 
+
+
+    //======================lightbox start======================// 
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'disableScrolling': true,
+        'showImageNumberLabel': false,
+    })
+
+    //======================lightbox end======================// 
+
+
+    //======================lightbox end======================// 
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+            $('body,html').animate({
+                scrollTop: $(hash).offset().top - 0
+            }, 00, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    //======================lightbox end======================// 
 
 });

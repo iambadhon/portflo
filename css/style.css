@@ -42,12 +42,11 @@ p {
 /*========================nav section start========================*/
 .main_nav {
     padding: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999999;
-    background: transparent !important;
 }
 
 .main_nav .logo {
@@ -82,6 +81,99 @@ p {
 
 .main_nav .menu ul li a:hover {
     background: #d6c6b2;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    background: #d6c6b2
+}
+
+.nav_sticky {
+    background: rgb(29, 161, 242, .9);
+    position: fixed;
+    height: 70px;
+    animation: animateNav 1s;
+    -webkit-animation: animateNav 1s;
+}
+
+@keyframes animateNav {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.nav_sticky .navbar-brand img {
+    width: 160px;
+}
+
+.nav_sticky .menu ul li a {
+    line-height: 70px;
+    padding: 0 10px !important;
+}
+
+.navbar .navbar-toggler {
+    padding: .2rem .6rem .4rem .6rem;
+    border-color: #444444;
+    border-radius: 0rem;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler-icon {
+    width: 24px;
+    height: 19px;
+    background-image: none;
+    position: relative;
+    border-bottom: 3px solid #444444;
+    transition: all .3s linear;
+}
+
+.navbar .navbar-toggler-icon::after,
+.navbar .navbar-toggler-icon::before {
+    width: 24px;
+    position: absolute;
+    height: 3px;
+    background-color: #444444;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all .3s linear;
+}
+
+.navbar .navbar-toggler-icon::after {
+    top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    background: #958673;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: translateY(8px) rotate(-45deg);
+    -webkit-transform: translateY(8px) rotate(-45deg);
+    -moz-transform: translateY(8px) rotate(-45deg);
+    -ms-transform: translateY(8px) rotate(-45deg);
+    -o-transform: translateY(8px) rotate(-45deg);
+    background: #958673;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
 }
 
 /*========================nav section end========================*/
@@ -139,13 +231,12 @@ p {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    color: #222222;
+    color: #d6c6b2;
     font-family: 'Open Sans',
         sans-serif;
     text-transform: uppercase;
     padding: 15px 20px;
     border: 2px solid #d6c6b2;
-    color: #d6c6b2;
     display: inline-block;
 }
 
@@ -156,6 +247,8 @@ p {
 
 #banner .banner_btn a:first-child {
     margin-right: 30px;
+    background: #d6c6b2;
+    color: #222222;
 }
 
 /*========================banner section end========================*/
@@ -418,6 +511,16 @@ p {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#portfolio .portfolio_item_img_overlay_icon i:hover {
+    background: #222222;
 }
 
 #portfolio .portfolio_item_img_overlay_text {
@@ -1195,28 +1298,6 @@ p {
 /*========================footer section end========================*/
 
 
-
-
-/*==========================preloader section start==========================*/
-.preloader {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    background: #233B4F;
-    z-index: 99999999999;
-}
-
-.preloader img {
-    max-width: 50%;
-    align-self: center;
-}
-
-/*==========================preloader section end==========================*/
-
 /*==========================scroll to top section start==========================*/
 .scroll_to_top {
     position: fixed;
@@ -1238,7 +1319,7 @@ p {
 }
 
 .scroll_to_top i {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     transition: .5s;
 }

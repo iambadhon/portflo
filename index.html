@@ -7,41 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portflo | Graphic & Web Designer</title>
     <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="font/flaticon.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     <!---------------------------nav section start--------------------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light main_nav">
+    <nav class="navbar navbar-expand-lg navbar-light main_nav">
         <div class="container">
             <a class="navbar-brand logo" href="index.html">
                 <img src="images/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse menu" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#banner">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
+                        <a class="nav-link" href="#about">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Blog</a>
+                        <a class="nav-link" href="#blog">My Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -204,16 +204,17 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-sm-8 offset-1">
+                <div class="col-lg-6 col-sm-7 col-md-8 offset-1">
                     <div class="row">
-                        <div class="col-lg-6 col-sm-6 margin_bottom">
+                        <div class="col-lg-6 col-md-6 margin_bottom">
                             <div class="portfolio_item">
                                 <div class="portfolio_item_img">
                                     <img src="images/portfolio1.jpg" class="img-fluid" alt="portfolio">
 
                                     <div class="portfolio_item_img_overlay">
                                         <div class="portfolio_item_img_overlay_icon">
-                                            <i class="flaticon-url"></i>
+                                            <a href="images/portfolio1.jpg" data-lightbox="image-1">
+                                                <i class="flaticon-url"></i></a>
                                         </div>
                                         <div class="portfolio_item_img_overlay_text">
                                             <p>Girl Illustration</p>
@@ -224,13 +225,14 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-sm-6 margin_bottom">
+                        <div class="col-lg-6 col-md-6 margin_bottom">
                             <div class="portfolio_item">
                                 <div class="portfolio_item_img">
                                     <img src="images/portfolio2.jpg" class="img-fluid" alt="portfolio">
                                     <div class="portfolio_item_img_overlay">
                                         <div class="portfolio_item_img_overlay_icon">
-                                            <i class="flaticon-url"></i>
+                                            <a href="images/portfolio2.jpg" data-lightbox="image-1">
+                                                <i class="flaticon-url"></i></a>
                                         </div>
                                         <div class="portfolio_item_img_overlay_text">
                                             <p>Girl Illustration</p>
@@ -241,13 +243,14 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="portfolio_item">
                                 <div class="portfolio_item_img">
                                     <img src="images/portfolio3.jpg" class="img-fluid" alt="portfolio">
                                     <div class="portfolio_item_img_overlay">
                                         <div class="portfolio_item_img_overlay_icon">
-                                            <i class="flaticon-url"></i>
+                                            <a href="images/portfolio3.jpg" data-lightbox="image-1">
+                                                <i class="flaticon-url"></i></a>
                                         </div>
                                         <div class="portfolio_item_img_overlay_text">
                                             <p>Girl Illustration</p>
@@ -258,13 +261,14 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="portfolio_item">
                                 <div class="portfolio_item_img">
                                     <img src="images/portfolio4.jpg" class="img-fluid" alt="portfolio">
                                     <div class="portfolio_item_img_overlay">
                                         <div class="portfolio_item_img_overlay_icon">
-                                            <i class="flaticon-url"></i>
+                                            <a href="images/portfolio4.jpg" data-lightbox="image-1">
+                                                <i class="flaticon-url"></i></a>
                                         </div>
                                         <div class="portfolio_item_img_overlay_text">
                                             <p>Girl Illustration</p>
@@ -274,11 +278,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-3">
+                <div class="col-lg-3 col-sm-5 col-md-4">
                     <div class="portfolio_head">
                         <h2>My portfolio</h2>
                     </div>
@@ -297,9 +300,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <!---------------------------portfolio section end--------------------------->
 
@@ -424,7 +424,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-4">
                     <div class="pricing_item text-center">
                         <div class="pricing_item_head">
                             <h3>Free Trial</h3>
@@ -451,7 +451,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-4">
                     <div class="pricing_item text-center">
                         <div class="pricing_item_head">
                             <h3>Premium</h3>
@@ -478,7 +478,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-4">
                     <div class="pricing_item text-center">
                         <div class="pricing_item_head">
                             <h3>Standard</h3>
@@ -523,9 +523,9 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-12">
                     <div class="row">
-                        <div class="col-lg-12 col-sm-6">
+                        <div class="col-lg-12 col-md-6">
                             <div class="blog_item margin_bottom">
                                 <div class="row mx-0">
                                     <div class="col-lg-5 px-0">
@@ -572,7 +572,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12 col-sm-6">
+                        <div class="col-lg-12 col-md-6">
                             <div class="blog_item">
                                 <div class="row mx-0">
                                     <div class="col-lg-5 px-0">
@@ -622,7 +622,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-md-12">
                     <div class="blog_item xs_margin">
                         <div class="blog_item_img">
                             <img src="images/blog3.jpg" class="img-fluid" alt="blog">
@@ -633,35 +633,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="blog_text">
-                            <div class="bolg_text_info">
-                                <span><i class="flaticon-user"></i> Posted By: Admin</span>
-                                <ul>
-                                    <li><a href="#"><i class="flaticon-thumbs-up-hand-symbol"></i>
-                                            1.5k</a></li>
-                                    <li><a href="#"><i class="flaticon-speech-bubbles-comment-option"></i>
-                                            1k</a>
-                                    </li>
-                                    <li><a href="#">
-
-                                            <i class="flaticon-share"></i>
-                                            1k</a></li>
-                                </ul>
-                            </div>
-                            <div class="blog_text_docs">
-                                <h2 class="text-center">Design is so Simple, So that it’s too much Complicated</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                    ad minim eniam, quis nostrud exercitation ullamco.</p>
-                            </div>
-                            <div class="blog_text_btn">
-                                <a href="#">Read More <i class="flaticon-right-arrow"></i></a>
-                                <a href="#"><i class="flaticon-share"></i> Share</a>
-                            </div>
+                    </div>
+                    <div class="blog_text">
+                        <div class="bolg_text_info">
+                            <span><i class="flaticon-user"></i> Posted By: Admin</span>
+                            <ul>
+                                <li><a href="#"><i class="flaticon-thumbs-up-hand-symbol"></i>1.5k</a>
+                                </li>
+                                <li><a href="#"><i class="flaticon-speech-bubbles-comment-option">
+                                        </i>1k</a></li>
+                                <li><a href="#"><i class="flaticon-share"></i>1k</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog_text_docs">
+                            <h2 class="text-center">Design is so Simple, So that it’s too much
+                                Complicated</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim eniam, quis nostrud exercitation ullamco.</p>
+                        </div>
+                        <div class="blog_text_btn">
+                            <a href="#">Read More <i class="flaticon-right-arrow"></i></a>
+                            <a href="#"><i class="flaticon-share"></i> Share</a>
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="blog_btn text-center">
                 <a href="#">Browse All</a>
@@ -738,15 +734,9 @@
     <!---------------------------footer section end--------------------------->
 
 
-    <!------------------------------preloader section start------------------------------>
-    <div class="preloader">
-        <img src="images/preloader.gif" alt="loading">
-    </div>
-    <!------------------------------preloader section end------------------------------>
-
     <!------------------------------scroll to top section start------------------------------>
     <div class="scroll_to_top">
-        <i class="fad fa-chevron-double-up"></i>
+        <i class="flaticon-top"></i>
     </div>
     <!------------------------------scroll to top section end------------------------------>
 
@@ -755,6 +745,7 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/app.js"></script>
     <!---------------------------jquery file linkup end--------------------------->
 
