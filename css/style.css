@@ -1305,6 +1305,7 @@ p {
     border-radius: 50%;
     cursor: pointer;
     z-index: 55555;
+    box-shadow: 0 0 8px 2px #d6c6b2;
     display: none;
 }
 
