@@ -115,8 +115,9 @@
 /*=========================md device start=========================*/
 @media(min-width:768px) and (max-width:991px) {
     .main_nav .menu ul {
-        background: gray;
+        background: #c3c3c3;
         text-align: center;
+        padding: 10px 0;
     }
 
     .main_nav .menu ul li {
@@ -126,6 +127,10 @@
 
     .main_nav .menu ul li a {
         padding-top: 10px !important;
+    }
+
+    .nav_sticky .menu ul li a {
+        display: block;
     }
 
     #banner::after {
@@ -277,8 +282,9 @@
 @media(min-width:576px) and (max-width:767px) {
 
     .main_nav .menu ul {
-        background: gray;
+        background: #c3c3c3;
         text-align: center;
+        padding: 10px 0;
     }
 
     .main_nav .menu ul li {
@@ -288,6 +294,10 @@
 
     .main_nav .menu ul li a {
         padding-top: 10px !important;
+    }
+
+    .nav_sticky .menu ul li a {
+        display: block;
     }
 
     #banner .banner_img {
@@ -718,7 +728,6 @@
     }
 
     .nav_sticky .menu ul li a {
-        padding-top: 10px !important;
         display: block;
     }
 
