@@ -50,21 +50,12 @@ p {
 }
 
 .main_nav .logo {
-    padding: 0;
-}
-
-.main_nav .logo img {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.main_nav .menu {
-    margin-top: -37px !important;
+    padding: 20px 0 0 0;
 }
 
 .main_nav .menu ul li {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main_nav .menu ul li a {
@@ -73,10 +64,7 @@ p {
     font-family: 'Open Sans',
         sans-serif;
     color: #222222 !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    padding-bottom: 10px !important;
-    padding-top: 60px !important;
+    padding: 60px 10px 10px 10px !important;
 }
 
 .main_nav .menu ul li a:hover {
@@ -88,9 +76,8 @@ p {
 }
 
 .nav_sticky {
-    background: rgb(29, 161, 242, .9);
+    background: rgba(198, 221, 235, 0.9);
     position: fixed;
-    height: 70px;
     animation: animateNav 1s;
     -webkit-animation: animateNav 1s;
 }
@@ -105,13 +92,20 @@ p {
     }
 }
 
+.nav_sticky .logo {
+    padding-top: 0;
+}
+
 .nav_sticky .navbar-brand img {
     width: 160px;
+    padding: 10px 0;
 }
 
 .nav_sticky .menu ul li a {
-    line-height: 70px;
-    padding: 0 10px !important;
+    padding-top: 10px !important;
+    display: inline-block;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .navbar .navbar-toggler {
@@ -1307,7 +1301,7 @@ p {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: #71b6d5;
+    background: #c6ddebe6;
     border-radius: 50%;
     cursor: pointer;
     z-index: 55555;
@@ -1320,7 +1314,7 @@ p {
 
 .scroll_to_top i {
     font-size: 30px;
-    color: #fff;
+    color: #444444;
     transition: .5s;
 }
 

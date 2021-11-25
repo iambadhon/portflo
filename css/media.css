@@ -276,10 +276,6 @@
 /*=========================sm device start=========================*/
 @media(min-width:576px) and (max-width:767px) {
 
-    .navbar-brand img {
-        width: 120px;
-    }
-
     .main_nav .menu ul {
         background: gray;
         text-align: center;
@@ -706,13 +702,10 @@
 /*=========================xs device start=========================*/
 @media(max-width:575px) {
 
-    .navbar-brand img {
-        width: 120px;
-    }
-
     .main_nav .menu ul {
         background: #c3c3c3;
         text-align: center;
+        padding: 10px 0;
     }
 
     .main_nav .menu ul li {
@@ -722,6 +715,11 @@
 
     .main_nav .menu ul li a {
         padding-top: 10px !important;
+    }
+
+    .nav_sticky .menu ul li a {
+        padding-top: 10px !important;
+        display: block;
     }
 
     #banner {
@@ -1144,15 +1142,15 @@
     }
 
     #footer .footer_copyright .footer_copyright_text p {
-        padding: 0 30px;
+        padding: 0 40px;
     }
 
     .scroll_to_top {
         right: 12px;
         bottom: 12px;
-        width: 32px;
-        height: 32px;
-        line-height: 32px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
     }
 
     .scroll_to_top i {
