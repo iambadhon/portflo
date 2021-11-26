@@ -93,6 +93,7 @@ $(function () {
         'wrapAround': true,
         'disableScrolling': true,
         'showImageNumberLabel': false,
+        'positionFromTop': 130,
     })
 
     //======================lightbox end======================// 

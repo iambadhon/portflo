@@ -23,12 +23,21 @@
     #blog .blog_text {
         padding: 54px 40px;
     }
+
+    #blog .lg_padding {
+        padding: 68px 40px;
+    }
 }
 
 /*=========================xxl device end=========================*/
 
 
 /*=========================xl device start=========================*/
+@media (min-width:1200px) and (max-width:1399px) {
+    #blog .lg_padding {
+        padding: 32px;
+    }
+}
 
 /*=========================xl device end=========================*/
 
@@ -100,6 +109,36 @@
         width: 100%;
     }
 
+    #blog .blog_text {
+        padding: 12px;
+    }
+
+    #blog .lg_padding {
+        padding: 20px;
+    }
+
+    #blog .lg_padding .bolg_text_info {
+        margin-bottom: 15px;
+    }
+
+    #blog .bolg_text_info {
+        margin-bottom: 6px;
+    }
+
+    #blog .blog_text_docs {
+        margin-bottom: 12px;
+    }
+
+    #blog .lg_padding .blog_text_docs {
+        margin-bottom: 22px;
+    }
+
+    #blog .blog_text_docs h2 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
     #footer .footer_main {
         padding-top: 70px;
     }
@@ -114,6 +153,11 @@
 
 /*=========================md device start=========================*/
 @media(min-width:768px) and (max-width:991px) {
+
+    .main_nav .logo {
+        padding: 10px 0;
+    }
+
     .main_nav .menu ul {
         background: #c3c3c3;
         text-align: center;
@@ -127,6 +171,10 @@
 
     .main_nav .menu ul li a {
         padding-top: 10px !important;
+    }
+
+    .nav_sticky .navbar-brand img {
+        padding: 0;
     }
 
     .nav_sticky .menu ul li a {
@@ -280,6 +328,9 @@
 
 /*=========================sm device start=========================*/
 @media(min-width:576px) and (max-width:767px) {
+    .main_nav .logo {
+        padding: 10px 0;
+    }
 
     .main_nav .menu ul {
         background: #c3c3c3;
@@ -294,6 +345,10 @@
 
     .main_nav .menu ul li a {
         padding-top: 10px !important;
+    }
+
+    .nav_sticky .navbar-brand img {
+        padding: 0;
     }
 
     .nav_sticky .menu ul li a {
@@ -711,6 +766,9 @@
 
 /*=========================xs device start=========================*/
 @media(max-width:575px) {
+    .main_nav .logo {
+        padding: 10px 0;
+    }
 
     .main_nav .menu ul {
         background: #c3c3c3;
@@ -725,6 +783,10 @@
 
     .main_nav .menu ul li a {
         padding-top: 10px !important;
+    }
+
+    .nav_sticky .navbar-brand img {
+        padding: 0;
     }
 
     .nav_sticky .menu ul li a {
